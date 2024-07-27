@@ -24,7 +24,7 @@ public class HashMapTest {
     }
 
     @Test
-    public void sizeTest(){
+    public void sizeTest() {
         Integer expected = 3;
         HashMap<Integer, String> starwarsMap = new HashMap<>();
         starwarsMap.put(1, "Jedi");
@@ -37,7 +37,7 @@ public class HashMapTest {
     }
 
     @Test
-    public void emptyAndClearTest(){
+    public void emptyAndClearTest() {
         HashMap<Integer, String> starwarsMap = new HashMap<>();
         starwarsMap.put(1, "Jedi");
         starwarsMap.put(2, "Sith");
@@ -46,11 +46,11 @@ public class HashMapTest {
         starwarsMap.clear();
 
         Assert.assertTrue(true);
-       // Assert.assertTrue(starwarsMap.isEmpty());
+        // Assert.assertTrue(starwarsMap.isEmpty());
     }
 
     @Test
-    public void getValueTest(){
+    public void getValueTest() {
         HashMap<Integer, String> starwarsMap = new HashMap<>();
         starwarsMap.put(1, "Jedi");
         starwarsMap.put(2, "Sith");
@@ -63,7 +63,7 @@ public class HashMapTest {
     }
 
     @Test
-    public void containsKeyAndValueTest(){
+    public void containsKeyAndValueTest() {
         HashMap<Integer, String> starwarsMap = new HashMap<>();
         starwarsMap.put(1, "Jedi");
         starwarsMap.put(2, "Sith");
@@ -74,7 +74,7 @@ public class HashMapTest {
     }
 
     @Test
-    public void keySetTest(){
+    public void keySetTest() {
         HashMap<Integer, String> starwarsMap = new HashMap<>();
         starwarsMap.put(1, "Jedi");
         starwarsMap.put(2, "Sith");
@@ -88,18 +88,4 @@ public class HashMapTest {
         System.out.println(Arrays.toString(actual));
         System.out.println(starwarsMap.keySet());
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

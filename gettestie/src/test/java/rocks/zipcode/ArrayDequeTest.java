@@ -41,7 +41,7 @@ public class ArrayDequeTest {
     }
 
     @Test
-    public void clearIsEmpty() {
+    public void clearIsEmptyTest() {
         ArrayDeque<String> cerealArr = new ArrayDeque<>();
         cerealArr.add("FruitLoops");
         cerealArr.add("CaptnCrunch");

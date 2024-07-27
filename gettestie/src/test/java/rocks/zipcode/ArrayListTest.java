@@ -10,7 +10,7 @@ import java.util.List;
 public class ArrayListTest {
 
     @Test
-    public void sizeAddAndRemove(){
+    public void sizeAddAndRemoveTest() {
         Integer exected = 2;
         List<String> arrList = new ArrayList<>();
         arrList.add("Lets");
@@ -24,7 +24,7 @@ public class ArrayListTest {
     }
 
     @Test
-    public void isEmptyTest(){
+    public void isEmptyTest() {
         List<String> arrList = new ArrayList<>();
         arrList.add("Lets");
         arrList.add("Go");
@@ -34,7 +34,7 @@ public class ArrayListTest {
     }
 
     @Test
-    public void containsTest(){
+    public void containsTest() {
         List<String> arrList = new ArrayList<>();
         arrList.add("Lets");
         arrList.add("Go");
@@ -43,7 +43,7 @@ public class ArrayListTest {
     }
 
     @Test
-    public void indexTest(){
+    public void indexTest() {
         List<String> arrList = new ArrayList<>();
         arrList.add("Lets");
         arrList.add("Go");
