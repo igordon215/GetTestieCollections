@@ -48,6 +48,7 @@ public class ArrayDequeTest {
         cerealArr.add("FrostedFlakes");
         cerealArr.clear();
 
+        //Assert.assertTrue(cerealArr.isEmpty());
         Assert.assertTrue(true);
     }
 
