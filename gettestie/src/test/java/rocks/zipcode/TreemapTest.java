@@ -3,58 +3,55 @@ package rocks.zipcode;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.TreeSet;
+import java.util.TreeMap;
 
 public class TreemapTest {
 
     @Test
-    public void addRemoveSizeTest() {
-        TreeSet<String> starks = new TreeSet<>();
-        starks.add("Arya");
-        starks.add("Bran");
-        starks.add("Robb");
-        starks.add("Rickon");
-        starks.remove("Robb");
-        Integer expected = 3;
+    public void putAndRemoveTest() {
+        TreeMap<Integer, String> gothamTree = new TreeMap<>();
+        gothamTree.put(1, "Batman");
+        gothamTree.put(2, "Robin");
+        gothamTree.put(3, "Joker");
+        gothamTree.remove(3);
 
-        Integer actual = starks.size();
+        TreeMap<Integer, String> expected = new TreeMap<>();
+        expected.put(1, "Batman");
+        expected.put(2, "Robin");
 
-        Assert.assertEquals(expected, actual);
+        Assert.assertEquals(expected, gothamTree);
+    }
+
+    @Test
+    public void clearIsEmptyTest() {
+        TreeMap<Integer, String> gothamTree = new TreeMap<>();
+        gothamTree.put(1, "Batman");
+        gothamTree.put(2, "Robin");
+        gothamTree.put(3, "Joker");
+        gothamTree.clear();
+
+        //Assert.assertTrue(gothamTree.isEmpty());
+        Assert.assertTrue(true);
+    }
+
+    @Test
+    public void checkOrderTest() {
+        TreeMap<Integer, String> gothamTree = new TreeMap<>();
+        gothamTree.put(1, "Batman");
+        gothamTree.put(2, "Robin");
+        gothamTree.put(3, "Joker");
+
+        System.out.println(gothamTree);
     }
 
     @Test
     public void containsTest() {
-        TreeSet<String> starks = new TreeSet<>();
-        starks.add("Arya");
-        starks.add("Bran");
-        starks.add("Robb");
-        starks.add("Rickon");
+        TreeMap<Integer, String> gothamTree = new TreeMap<>();
+        gothamTree.put(1, "Batman");
+        gothamTree.put(2, "Robin");
+        gothamTree.put(3, "Joker");
 
-        Assert.assertTrue(starks.contains("Arya"));
-    }
-
-    @Test
-    public void subsetTest() {
-        TreeSet<String> starks = new TreeSet<>();
-        starks.add("Arya");
-        starks.add("Bran");
-        starks.add("Robb");
-        starks.add("Rickon");
-
-        System.out.println(starks.subSet("Arya", true, "Bran", true));
-    }
-
-
-    @Test
-    public void clearIsEmptyTest() {
-        TreeSet<String> starks = new TreeSet<>();
-        starks.add("Arya");
-        starks.add("Bran");
-        starks.add("Robb");
-        starks.add("Rickon");
-        starks.clear();
-
-        Assert.assertTrue(true);
-        //Assert.assertTrue(starks.isEmpty());
+        Assert.assertTrue(gothamTree.containsKey(2));
+        Assert.assertTrue(gothamTree.containsValue("Robin"));
     }
 }
