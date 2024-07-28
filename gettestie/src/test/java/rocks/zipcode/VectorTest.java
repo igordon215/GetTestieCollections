@@ -9,7 +9,7 @@ public class VectorTest {
 
     @Test
     public void setSizeTest() {
-        Vector<String> matrixVec= new Vector<>();
+        Vector<String> matrixVec = new Vector<>();
         matrixVec.add("Neo");
         matrixVec.add("Trinity");
         matrixVec.add("Morpheus");
@@ -21,7 +21,7 @@ public class VectorTest {
 
     @Test
     public void sizeTest() {
-        Vector<String> matrixVec= new Vector<>();
+        Vector<String> matrixVec = new Vector<>();
         matrixVec.add("Neo");
         matrixVec.add("Trinity");
         matrixVec.add("Morpheus");
@@ -34,7 +34,7 @@ public class VectorTest {
 
     @Test
     public void clearIsEmptyTest() {
-        Vector<String> matrixVec= new Vector<>();
+        Vector<String> matrixVec = new Vector<>();
         matrixVec.add("Neo");
         matrixVec.add("Trinity");
         matrixVec.add("Morpheus");
@@ -43,6 +43,4 @@ public class VectorTest {
         Assert.assertTrue(true);
         //Assert.assertTrue(matrixVec.isEmpty());
     }
-
-
 }
