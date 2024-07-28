@@ -66,7 +66,7 @@ public class LinkedListTest {
 
             Assert.assertTrue(true);
             //Assert.assertTrue(colorList.isEmpty());
-            
+
         }
 
 }
